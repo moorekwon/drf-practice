@@ -7,6 +7,7 @@ authors = ["Hyojin Kwon <raccoonhj33@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.7"
 django-extensions = "^2.2.8"
+requests = "^2.23.0"
 
 [tool.poetry.dev-dependencies]
 

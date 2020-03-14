@@ -9,6 +9,7 @@ from rest_framework.authtoken.models import Token
 
 
 class Post(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     title = models.CharField(max_length=1024)
     text = models.TextField()
     created = models.DateField(auto_now_add=True)
