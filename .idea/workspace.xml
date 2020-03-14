@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e817b459-9819-4913-b012-61268fa776e2" name="Default Changelist" comment="" />
+    <list default="true" id="e817b459-9819-4913-b012-61268fa776e2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app/members/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app/templates/members/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/base/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../app/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../app/config/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/db.sqlite3" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1Z1ByWxqhYcxVUhnGJw8WWjPIen" />
   <component name="ProjectViewState">
@@ -16,7 +28,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../app/templates/members" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />

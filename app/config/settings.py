@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'base.apps.BaseConfig',
+    'members.apps.MembersConfig',
 
     # djangorestframework 설치 후 추가
     'rest_framework',
