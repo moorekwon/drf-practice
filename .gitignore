@@ -1,8 +1,7 @@
 # Created by https://www.gitignore.io/api/git,linux,macos,django,python,windows,jupyternotebooks
 # Edit at https://www.gitignore.io/?templates=git,linux,macos,django,python,windows,jupyternotebooks
 
-
-./secrets.json
+secrets.json
 #/requirements.txt
 #/.static
 

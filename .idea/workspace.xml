@@ -2,14 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e817b459-9819-4913-b012-61268fa776e2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/members/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../app/templates/members/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/drf-practice.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.python-version" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/base/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/base/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/base/apps.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/base/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../app/config/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../app/config/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/base/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/base/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/base/pagination.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/base/serializers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/base/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/base/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/base/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/config/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/config/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/config/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/config/wsgi.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/members/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/members/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/members/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/members/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/members/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/members/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/members/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/members/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/static/bootstrap/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/static/bootstrap/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/templates/members/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/templates/rest_framework/api.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/templates/rest_framework/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poetry.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pyproject.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../secrets.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
