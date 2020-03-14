@@ -1,0 +1,98 @@
+{% load rest_framework %}
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+<head>
+    {% block head %}
+    {% block meta %}
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% endblock %}
+
+    <title>
+        {% block title %}
+        {% if name %}{{ name }} - {% endif %}Django REST framework
+        {% endblock %}
+    </title>
+
+    {% block style %}
+    {% block bootstrap_theme %}
+    <link rel="stylesheet" href="{% static 'bootstrap/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap/bootstrap.min.css' %}">
+    {% endblock %}
+    {% endblock %}
+    {% endblock %}
+</head>
+
+{% block body %}
+<body class="{% block bodyclass %}{% endblock %}">
+<div class="wrapper">
+    {% block navbar %}
+    <div class="navbar navbar-static-top {% block bootstrap_navbar_variant %}navbar-inverse{% endblock %}">
+        <div class="container">
+            <span>
+                {% block branding %}
+                <a href="http://www.django-rest-framework.org" class="navbar-brand"
+                   rel="nofollow">Django REST framework</a>
+                {% endblock %}
+            </span>
+            <ul class="nav navbar-nav pull-right">
+                {% block userlinks %}
+                {% if user.is_authenticated %}
+                authenticated user: {% optional_logout request user %}
+
+                {% else %}
+                {% optional_login request %}
+                {% endif %}
+                {% endblock %}
+            </ul>
+        </div>
+    </div>
+    {% endblock %}
+</div>
+
+<div class="container">
+    <div id="content">
+        {% block content %}
+        {% if 'GET' in allowed_methods %}
+        <form id="get-form" class="pull-right">
+            <!--bootstrap 모양을 파지 않을 경우, 기본 모양을 삭제하고 직접 customize 할 수 있음-->
+            <!--작업할 수 있는 컨텍스트: api_settings, content, request, response, view-->
+            <fieldset>
+                {% if api_settings.URL_FORMAT_OVERRIDE %}
+                <div class="btn-group format-selection">
+                    <a class="btn btn-primary js-tooltip" href="{{ request.get_full_path }}" rel="nofollow"
+                       title="Make a GET request on the {{ name }} resource">GET</a>
+
+                    <button class="btn btn-primary dropdown-toggle js-tooltip" data-toggle="dropdown"
+                            title="Specify a format for the GET request">
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        {% for format in available_formats %}
+                        <li>
+                            <a class="js-tooltip format-option"
+                               href="{% add_query_param request api_settings.URL_FORMAT_OVERRIDE format %}"
+                               rel="nofollow"
+                               title="Make a GET request on the {{ name }} resource with the format set to `{{ format }}`">{{
+                                format }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% else %}
+                <a class="btn btn-primary js-tooltip" href="{{ request.get_full_path }}" rel="nofollow"
+                   title="Make a GET request on the {{ name }} resource">GET</a>
+                {% endif %}
+            </fieldset>
+        </form>
+        {% endif %}
+        {% endblock %}
+    </div>
+</div>
+</body>
+{% endblock %}
+</html>

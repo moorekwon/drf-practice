@@ -1,0 +1,8 @@
+<!--DRF가 제공하는 기본 모양은 탐색가능한(web browsable) API 자체로 꽤 멋있으나, customization 방법 제공-->
+<!--기본 테마 재정의(overriding)-->
+<!--base.html에 포함된 많은 블록 구성요소들을 스타일에 맞게 수정할 수 있음-->
+{% extends 'rest_framework/base.html' %}
+
+{% block branding %}
+<a href="https://github.com/moorekwon" class="navbar-brand" rel="nofollow">Hyojin's Github</a>
+{% endblock %}
