@@ -1,14 +1,16 @@
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponse
 from django.shortcuts import render
 
 # Create your views here.
 from django.views.decorators.csrf import csrf_exempt
+from rest_framework.generics import get_object_or_404
 from rest_framework.parsers import JSONParser
 
 from snippets.models import Snippet
 from snippets.serializers import SnippetSerializer
 
 
+# CRUD(Create Read Update Delete) 구현하기
 # 첫 api 구현! localhost:8000/snippets/
 @csrf_exempt
 def snippet_list(request):
@@ -29,3 +31,27 @@ def snippet_list(request):
             # 따로 renderer 필요하지 않음
             return JsonResponse(serializer.data, status=201)
         return JsonResponse(serializer.errors, status=400)
+
+
+@csrf_exempt
+def snippet_detail(request, pk):
+    snippet = get_object_or_404(Snippet, pk=pk)
+
+    if request.method == 'GET':
+        serializer = SnippetSerializer(snippet)
+        return JsonResponse(serializer.data)
+
+    elif request.method == 'PATCH':
+        data = JSONParser().parse(request)
+        # 일부만 수정하고 싶을 때, partial=True 사용
+        serializer = SnippetSerializer(snippet, data=data, partial=True)
+
+        if serializer.is_valid():
+            serializer.save()
+            return JsonResponse(serializer.data)
+        return JsonResponse(serializer.errors, status=400)
+
+    elif request.method == 'DELETE':
+        snippet.delete()
+        # 지웠기 때문에 상태코드만 response
+        return HttpResponse(status=204)
