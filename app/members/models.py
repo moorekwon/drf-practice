@@ -34,6 +34,7 @@ class User(AbstractUser):
 # for user in User.objects.all():
 #     Token.objects.get_or_create(user=user)
 
+
 # 새로 만든 사용자
 @receiver(post_save, sender=settings.AUTH_USER_MODEL)
 def create_auth_token(sender, instance=None, created=False, **kwargs):
