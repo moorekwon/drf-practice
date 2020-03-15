@@ -5,6 +5,7 @@ from snippets.serializers import SnippetSerializer
 
 
 class SnippetListCreateAPIView(generics.ListCreateAPIView):
+    pagination_class = None
     queryset = Snippet.objects.all()
     serializer_class = SnippetSerializer
 
