@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.db import models
 
 # Create your models here.
@@ -10,6 +11,7 @@ STYLE_CHOICES = sorted([(item, item) for item in get_all_styles()])
 
 
 class Snippet(models.Model):
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=True)
     created = models.DateTimeField(auto_now_add=True)
     title = models.CharField(max_length=100, blank=True)
     code = models.TextField()

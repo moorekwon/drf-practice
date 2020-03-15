@@ -9,6 +9,7 @@ class SnippetSerializer(serializers.ModelSerializer):
         model = Snippet
         fields = (
             'pk',
+            'author',
             'title',
             'code',
             'linenos',
