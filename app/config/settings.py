@@ -39,6 +39,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+# 커스텀 유저 설정 시 추가
+AUTH_USER_MODEL = 'members.User'
+
 # Application definition
 
 INSTALLED_APPS = [

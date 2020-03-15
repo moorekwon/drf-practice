@@ -1,11 +1,11 @@
 import requests
 from django.contrib.auth import login
-from django.contrib.auth.models import User
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 
 # Create your views here.
 from config.settings import SECRETS
+from members.models import User
 
 
 def login_view(request):

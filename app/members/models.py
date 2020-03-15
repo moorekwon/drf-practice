@@ -15,11 +15,17 @@ OAuth 및 OAuth2
 '''
 
 from django.conf import settings
+from django.contrib.auth.models import AbstractUser
 from django.db import models
 
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 from rest_framework.authtoken.models import Token
+
+
+# 커스텀 유저 만들기
+class User(AbstractUser):
+    pass
 
 
 # Create your models here.
@@ -29,7 +35,7 @@ from rest_framework.authtoken.models import Token
 #     Token.objects.get_or_create(user=user)
 
 # 새로 만든 사용자
-@receiver(post_save, sender=settings.AUTH_USER_MODEL)
-def create_auth_token(sender, instance=None, created=False, **kwargs):
-    if created:
-        Token.objects.create(user=instance)
+# @receiver(post_save, sender=settings.AUTH_USER_MODEL)
+# def create_auth_token(sender, instance=None, created=False, **kwargs):
+#     if created:
+#         Token.objects.create(user=instance)

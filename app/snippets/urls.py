@@ -11,7 +11,7 @@ urlpatterns = [
     # apis.py (class-based view)
     # path('', apis.SnippetListCreateAPIViwe.as_view()),
     # path('<int:pk>/', apis.SnippetRetrieveUpdateDestroyAPIView.as_view()),
-    
+
     # generic.py
     path('', generic.SnippetListCreateAPIView.as_view()),
     path('<int:pk>/', generic.SnippetRetrieveUpdateDestroyAPIView.as_view()),

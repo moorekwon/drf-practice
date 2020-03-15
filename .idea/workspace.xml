@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e817b459-9819-4913-b012-61268fa776e2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../app/snippets/generic.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/base/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/base/migrations/0002_post_user.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/base/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../app/base/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../app/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/members/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../app/members/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/members/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../app/members/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/members/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../app/members/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/snippets/migrations/0001_initial.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/snippets/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../app/snippets/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,13 +52,17 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1152" y="357" width="598" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1584265728823">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="1152" y="357" width="598" height="390" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1853.1053@67.27.1853.1053" timestamp="1584265728823" />
     <state x="1187" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1583997393101">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="1187" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1583997393101" />
-    <state x="898" y="187" key="SettingsEditor" timestamp="1583997420877">
+    <state x="898" y="187" key="SettingsEditor" timestamp="1584265958230">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state x="898" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1583997420877" />
+    <state x="898" y="187" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1584265958230" />
   </component>
 </project>
