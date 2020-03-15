@@ -28,4 +28,4 @@ def snippet_list(request):
             # HttpResponse 대신 JsonResponse 사용
             # 따로 renderer 필요하지 않음
             return JsonResponse(serializer.data, status=201)
-        return JSONParser(serializer.errors, status=400)
+        return JsonResponse(serializer.errors, status=400)
