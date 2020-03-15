@@ -21,7 +21,7 @@ class SnippetTest(APITestCase):
         response = self.client.get(url)
 
         # response.data는 python data type 형으로 나옴
-        print('response.data >> ', response.data)
+        # print('response.data >> ', response.data)
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(len(response.data), 5)
@@ -35,9 +35,28 @@ class SnippetTest(APITestCase):
             self.assertEqual('1', snippet_data['code'])
 
             pk = snippet_data['pk']
-            print('pk >> ', pk)
+            # print('pk >> ', pk)
             snippet = Snippet.objects.get(pk=pk)
-            print('snippet >> ', snippet)
-            print('SnippetSerializer(snippet).data >> ', SnippetSerializer(snippet).data)
-            print('snippet_data >> ', snippet_data)
+            # print('snippet >> ', snippet)
+            # print('SnippetSerializer(snippet).data >> ', SnippetSerializer(snippet).data)
+            # print('snippet_data >> ', snippet_data)
             self.assertEqual(SnippetSerializer(snippet).data, snippet_data)
+
+    def test_snippet_create(self):
+        url = '/snippets/'
+
+        data = {
+            'code': 'def abc():',
+        }
+
+        response = self.client.post(url, data=data)
+        print('response.data >> ', response.data)
+        self.assertEqual(response.status_code, status.HTTP_201_CREATED)
+
+        pk = response.data['pk']
+        snippet = Snippet.objects.get(pk=pk)
+        print('pk >> ', pk)
+        print('snippet, snippet.pk >> ', snippet, snippet.pk)
+        print('SnippetSerializer(snippet).data >> ', SnippetSerializer(snippet).data)
+        self.assertEqual(SnippetSerializer(snippet).data, response.data)
+        self.assertEqual(Snippet.objects.count(), 1)
