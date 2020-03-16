@@ -105,11 +105,15 @@ DATABASES = {
     }
 }
 
+# DRF
 # pagination에 대한 기본 동작 정의
 # view에서 pagination 사용하기 위해 DEFAULT_PAGINATION_CLASS 및 PAGE_SIZE 재정의
 REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
-    'PAGE_SIZE': 20
+    'PAGE_SIZE': 20,
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework.authentication.BasicAuthentication',
+    ]
 }
 
 # Password validation
