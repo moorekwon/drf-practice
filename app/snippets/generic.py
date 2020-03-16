@@ -10,9 +10,8 @@ class SnippetListCreateAPIView(generics.ListCreateAPIView):
     # serializer_class = SnippetSerializer
 
     permission_classes = [
-        permissions.IsAuthenticatedOrReadOnly,
+        permissions.IsAuthenticatedOrReadOnly
     ]
-
 
     # 모델을 분리했음
     def get_serializer_class(self):

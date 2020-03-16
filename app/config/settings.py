@@ -58,6 +58,7 @@ INSTALLED_APPS = [
 
     # djangorestframework 설치 후 추가
     'rest_framework',
+    # 추가 후 migrate만 하면 됨
     'rest_framework.authtoken',
 
     'django_extensions',
@@ -112,7 +113,8 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
     'PAGE_SIZE': 20,
     'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework.authentication.BasicAuthentication',
+        # 'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
     ]
 }
 

@@ -1,3 +1,17 @@
+'''
+Token Authentication
+- client가 username/password를 토큰을 발급할 view에 전송
+- 토큰 발급을 처리하는 view는 받은 username/password(자격증명)를 이용해 해다 user가 있는지 확인
+- 있다면, 그 user의 토큰을 authtoken 테이블에 생성
+    - 해당 내용을 Response에 담아서 JSON 형태로 client에게 보내줌
+- client는 받은 토큰값을 로컬 영역에 저장
+    - 이후 다시 요청을 보낼 때마다, Header의 Authorization 키에 'Token <값>' 형태로 담아 보냄
+
+backend 개발자 포션
+- 토큰 발급을 처리하는 view 만들기 (apis.py)
+
+'''
+
 import requests
 from django.contrib.auth import login
 from django.http import HttpResponse
