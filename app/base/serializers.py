@@ -3,9 +3,11 @@
  - 쿼리셋 및 모델 인스턴스와 같은 복잡한 데이터를 기본 python 데이터 유형으로 변환
  - JSON, XML 및 기타 형식으로 쉽게 렌더링할 수 있음
  - 메모리에 갖고 있는 비연속적인 데이터를 연속적인 데이터(파일, 문자열, 등)로 만드는 과정
+ - Serializer(instance=instance) -> default로 안써줘도 됨
 
  deserializer
  - 연속적인 데이터를 python이 사용하는 데이터 형태로 만드는 과정
+ - Serializer(data='Python data')
 
  exclude
  - 특정 필드가 serialize되지 않도록 제외
