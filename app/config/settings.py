@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'base.apps.BaseConfig',
     'members.apps.MembersConfig',
     'snippets.apps.SnippetsConfig',
+    'amantha.apps.AmanthaConfig',
 
     # djangorestframework 설치 후 추가
     'rest_framework',

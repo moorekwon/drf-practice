@@ -1,10 +1,19 @@
 {% extends 'rest_framework/base.html' %}
 {% block content %}
-<div class="card text-center p-4">
-    <form action="" method="post">
-        {% csrf_token %}
+
+<form action="" class="form-signin" method="post" style="width: 50%;">
+    {% csrf_token %}
+    <div class="card text-center p-4">
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control mb-3" placeholder="Password" required="">
+
         <button class="btn btn-primary btn-block">로그인</button>
-    </form>
-    <a href="{{ login_url }}" class="btn btn-block btn-outline-primary mt-3">Naver로 로그인</a>
-</div>
+        <a href="{{ login_url }}" class="btn btn-block btn-outline-primary">Naver로 로그인</a>
+    </div>
+</form>
+
+
 {% endblock %}

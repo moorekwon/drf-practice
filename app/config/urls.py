@@ -21,4 +21,5 @@ urlpatterns = [
     path('', include('base.urls')),
     path('members/', include('members.urls')),
     path('snippets/', include('snippets.urls')),
+    path('', include('amantha.urls')),
 ]

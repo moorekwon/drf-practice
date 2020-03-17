@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e817b459-9819-4913-b012-61268fa776e2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../app/amantha/generic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../app/amantha/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../app/config/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../app/config/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/templates/members/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../app/templates/members/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,6 +164,11 @@
           </properties>
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../app/config/settings.py</url>
+          <line>65</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
