@@ -25,7 +25,8 @@ from rest_framework.authtoken.models import Token
 
 # 커스텀 유저 만들기
 class User(AbstractUser):
-    pass
+    img_profile = models.ImageField('프로필 이미지', blank=True, upload_to='userimgs/')
+    name = models.CharField('이름', max_length=100)
 
 
 # Create your models here.

@@ -2,8 +2,8 @@
 # Edit at https://www.gitignore.io/?templates=git,linux,macos,django,python,windows,jupyternotebooks
 
 secrets.json
-#/requirements.txt
-#/.static
+/requirements.txt
+/.static
 
 ### Django ###
 *.log

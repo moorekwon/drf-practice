@@ -21,23 +21,25 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
+
+ROOT_DIR = os.path.dirname(BASE_DIR)
+
+STATIC_ROOT = os.path.join(ROOT_DIR, '.static')
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'en)-l(wy0j&i7z415i7vt-zls203b2&u4plgshko!hfmy-fa&4'
-
-ROOT_DIR = os.path.dirname(BASE_DIR)
-
 SECRETS = json.load(open(os.path.join(ROOT_DIR, 'secrets.json')))
+
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = SECRETS['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # 커스텀 유저 설정 시 추가
 AUTH_USER_MODEL = 'members.User'
@@ -100,12 +102,14 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+AWS_ACCESS_KEY_ID = SECRETS['AWS_ACCESS_KEY_ID']
+AWS_SECRET_ACCESS_KEY = SECRETS['AWS_SECRET_ACCESS_KEY']
+AWS_STORAGE_BUCKET_NAME = SECRETS['AWS_STORAGE_BUCKET_NAME']
+AWS_AUTO_CREATE_BUCKET = True
+AWS_S3_REGION_NAME = 'ap-northeast-2'
+
+DATABASES = SECRETS['DATABASES']
 
 # DRF
 # pagination에 대한 기본 동작 정의
@@ -142,11 +146,10 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Seoul'
 
 USE_I18N = True
 
 USE_L10N = True
 
 USE_TZ = True
-
