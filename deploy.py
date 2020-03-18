@@ -69,7 +69,7 @@ def copy_secrets():
 # 컨테이너에서 runserver 실행
 def server_runserver():
     ssh_run(f'sudo docker exec {PROJECT_NAME} python manage.py collectstatic --noinput')
-    ssh_run(f'sudo docker exec -it -d {PROJECT_NAME} supervisord -c /srv/drf-practice/.config/supervisord.conf')
+    ssh_run(f'sudo docker exec -d {PROJECT_NAME} supervisord -c /srv/drf-practice/.config/supervisord.conf')
 
 
 if __name__ == '__main__':
