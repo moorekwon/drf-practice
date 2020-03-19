@@ -41,7 +41,7 @@ def login_view(request):
         'login_url': login_url
     }
 
-    return render(request, 'members/login.html', context)
+    return render(request, 'rest_framework/api.html', context)
 
 
 def naver_login(request):
