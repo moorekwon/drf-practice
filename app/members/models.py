@@ -28,7 +28,6 @@ class User(AbstractUser):
     img_profile = models.ImageField('프로필 이미지', blank=True, upload_to='userimgs/')
     name = models.CharField('이름', max_length=100)
 
-
 # Create your models here.
 # user들을 위한 토큰 생성
 # 기존 사용자
