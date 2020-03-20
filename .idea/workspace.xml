@@ -3,12 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="e817b459-9819-4913-b012-61268fa776e2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/members/apis.py" beforeDir="false" afterPath="$PROJECT_DIR$/../app/members/apis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/amantha/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../app/amantha/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/amantha/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../app/amantha/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/base/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/base/migrations/0002_auto_20200318_0239.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/base/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../app/base/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/members/migrations/0001_initial.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/members/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../app/members/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/members/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../app/members/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/members/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/../app/members/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/members/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../app/members/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/templates/members/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../app/templates/members/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/snippets/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../poetry.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/../pyproject.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
