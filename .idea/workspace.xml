@@ -3,17 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="e817b459-9819-4913-b012-61268fa776e2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/amantha/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../app/amantha/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/UserSerializer.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../app/UserSerializer.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/amantha/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/amantha/migrations/0002_auto_20200320_1729.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/amantha/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../app/amantha/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/amantha/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../app/amantha/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/base/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../app/base/migrations/0002_auto_20200318_0239.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/base/migrations/0002_auto_20200320_1724.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/base/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../app/base/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/config/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../app/config/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/members/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/members/migrations/0002_auto_20200320_1729.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/members/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../app/members/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/members/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/../app/members/serializers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../app/snippets/migrations/0001_initial.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../poetry.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/../pyproject.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../app/snippets/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../app/snippets/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +46,7 @@
       <recent name="$PROJECT_DIR$/../app/templates/members" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Django test">
+  <component name="RunManager" selected="Python.Django runserver">
     <configuration name="Django runserver" type="PythonConfigurationType" factoryName="Python">
       <module name="drf-practice" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -90,6 +94,9 @@
       <item itemvalue="Python.Django runserver" />
     </list>
   </component>
+  <component name="ServiceViewManager">
+    <option name="showServicesTree" value="false" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -120,38 +127,38 @@
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="1187" y="310" width="424" height="484" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1584346757364" />
-    <state width="904" height="344" key="GridCell.Tab.0.bottom" timestamp="1584666035614">
+    <state width="904" height="344" key="GridCell.Tab.0.bottom" timestamp="1584808643878">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="904" height="344" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1584666035614" />
-    <state width="904" height="344" key="GridCell.Tab.0.center" timestamp="1584666035612">
+    <state width="904" height="344" key="GridCell.Tab.0.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1584808643878" />
+    <state width="904" height="344" key="GridCell.Tab.0.center" timestamp="1584808643873">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="904" height="344" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1584666035612" />
-    <state width="904" height="344" key="GridCell.Tab.0.left" timestamp="1584666035612">
+    <state width="904" height="344" key="GridCell.Tab.0.center/67.27.1853.1053@67.27.1853.1053" timestamp="1584808643873" />
+    <state width="904" height="344" key="GridCell.Tab.0.left" timestamp="1584808643872">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="904" height="344" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1584666035612" />
-    <state width="904" height="344" key="GridCell.Tab.0.right" timestamp="1584666035613">
+    <state width="904" height="344" key="GridCell.Tab.0.left/67.27.1853.1053@67.27.1853.1053" timestamp="1584808643872" />
+    <state width="904" height="344" key="GridCell.Tab.0.right" timestamp="1584808643877">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="904" height="344" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1584666035613" />
-    <state width="904" height="344" key="GridCell.Tab.1.bottom" timestamp="1584666035620">
+    <state width="904" height="344" key="GridCell.Tab.0.right/67.27.1853.1053@67.27.1853.1053" timestamp="1584808643877" />
+    <state width="904" height="344" key="GridCell.Tab.1.bottom" timestamp="1584808643881">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="904" height="344" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1584666035620" />
-    <state width="904" height="344" key="GridCell.Tab.1.center" timestamp="1584666035618">
+    <state width="904" height="344" key="GridCell.Tab.1.bottom/67.27.1853.1053@67.27.1853.1053" timestamp="1584808643881" />
+    <state width="904" height="344" key="GridCell.Tab.1.center" timestamp="1584808643880">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="904" height="344" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1584666035618" />
-    <state width="904" height="344" key="GridCell.Tab.1.left" timestamp="1584666035615">
+    <state width="904" height="344" key="GridCell.Tab.1.center/67.27.1853.1053@67.27.1853.1053" timestamp="1584808643880" />
+    <state width="904" height="344" key="GridCell.Tab.1.left" timestamp="1584808643879">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="904" height="344" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1584666035615" />
-    <state width="904" height="344" key="GridCell.Tab.1.right" timestamp="1584666035618">
+    <state width="904" height="344" key="GridCell.Tab.1.left/67.27.1853.1053@67.27.1853.1053" timestamp="1584808643879" />
+    <state width="904" height="344" key="GridCell.Tab.1.right" timestamp="1584808643881">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
-    <state width="904" height="344" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1584666035618" />
+    <state width="904" height="344" key="GridCell.Tab.1.right/67.27.1853.1053@67.27.1853.1053" timestamp="1584808643881" />
     <state x="898" y="187" key="SettingsEditor" timestamp="1584632494572">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>

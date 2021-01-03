@@ -22,10 +22,10 @@ from django.db.models.signals import post_save
 from django.dispatch import receiver
 from rest_framework.authtoken.models import Token
 
+# 커스텀 유저 만들기
 from amantha.models import SendStar
 
 
-# 커스텀 유저 만들기
 class User(AbstractUser):
     GENDER = (
         ('남자', '남자'),
@@ -69,7 +69,8 @@ class User(AbstractUser):
         ('라이프 스타일', '라이프 스타일'),
     )
 
-    star_rating = models.ForeignKey(SendStar, on_delete=models.CASCADE, related_name='my_star', null=True)
+    # stars = models.ManyToManyField(SendStar)
+    username = models.CharField(max_length=30)
     email = models.EmailField()
     gender = models.CharField(choices=GENDER, max_length=6)
     img_profile = models.ImageField('프로필 이미지', blank=True, upload_to='user_images/')
@@ -85,7 +86,6 @@ class User(AbstractUser):
     blood_type = models.CharField(choices=BLOOD_TYPE, max_length=6)
     smoking = models.BooleanField(null=True)
     drinking = models.CharField(choices=DRINKING_STYLE, max_length=10)
-    # active = models.BooleanField()
 
     # 추가 프로필 - 소개글 작성
     introduction = models.TextField(max_length=150, blank=True)
@@ -93,8 +93,6 @@ class User(AbstractUser):
     select_stories = models.CharField(choices=SELECT_STORIES, max_length=60, blank=True)
     # 추가 프로필 - 관심태그 선택
     select_tags = models.CharField(choices=SELECT_TAGS, max_length=20, blank=True)
-
-
 
 # Create your models here.
 # user들을 위한 토큰 생성
